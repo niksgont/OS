@@ -1,0 +1,17 @@
+ 166  grep -i gcc /usr/bin | sort -r
+  167  cd /usr/bin | grep -i gcc | sort -r
+  168  cd /usr/bin
+  169  grep gcc
+  170  ls
+  171  grep -n "*gcc*" .
+  172  grep -nr 'yourString*' .
+  173  grep -n 'yourString*' .
+  174  grep -r '*gcc*' .
+  175  sudo grep -r '*gcc*' .
+  176  cd
+  177  cd WorkFolder/Inno/OS/Labs/week1
+  178  grep --nr "gcc*" /usr/bin
+  179  grep -nr "gcc*" /usr/bin
+  180  grep -r "gcc*" /usr/bin
+  181  history
+  
