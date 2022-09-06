@@ -1,0 +1,14 @@
+mkdir ~/root
+cd ~/root
+sleep 3
+date
+touch root.txt
+sleep 3
+date
+mkdir ~/home
+cd ~/home
+sleep 3
+date
+touch home.txt
+sleep 3
+date
