@@ -1,1 +1,2 @@
 
+More threads consume more time. 
