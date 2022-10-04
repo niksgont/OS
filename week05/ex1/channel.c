@@ -26,12 +26,10 @@ int main(void)
         close(f[0]);
         write(f[1], message, strlen(message) + 1);
         close(f[1]);
+        return 0;
     }
-    else
-    {
-        close(f[1]);
-        read(f[0], message, 1024);
-        printf("Received: %s", message);
-        close(f[0]);
-    }
+    close(f[1]);
+    read(f[0], message, 1024);
+    printf("Received: %s", message);
+    close(f[0]);
 }
