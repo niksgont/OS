@@ -1,9 +1,5 @@
-real 3.01
-
-real 1.65
-
 real 1.21
-
 real 1.75
-
-real 1.75
+real 2.25
+real 3.12
+real 4.01
