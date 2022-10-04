@@ -7,19 +7,19 @@ int main(void)
 {
     int f[2];
     char message[1024];
-    pid_t p;
+    pid_t pt;
     if (pipe(f) == -1)
     {
         fprintf(stderr, "ERROR! Pipe failed");
         return 123;
     }
-    p = fork();
+    pt = fork();
     if (p < 0)
     {
         fprintf(stderr, "ERROR! Fork failed");
         return 123;
     }
-    if (p > 0)
+    if (pt > 0)
     {
         printf("Enter a message: ");
         fgets(message, 1024, stdin);
