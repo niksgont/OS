@@ -1,0 +1,19 @@
+5
+2 2 2 2 0
+2 5 2 4 8
+Arrival Burst Finish Turnaround Waiting 
+0	8	 8   8	 0
+2	2	10	 8	 6
+2	5	15  13	 8
+2	2	17	15	13
+2	4	21	19	15
+Average	12.6	8.4
+
+Arrival Burst Finish Turnaround Waiting 
+0	8	 8	 8	 0
+2	2	10	 8	 6
+2	5	21	19	14
+2	2	12	10	 8
+2	4	16	14	10
+Average	11.8	7.6
+Shortest Job first has the advantage of having a minimum average waiting time among all scheduling algorithms. Because all short processes do not need to wait for longer process to execute. It may cause starvation if shorter processes keep coming. This problem can be solved using the concept of ageing. 
