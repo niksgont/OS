@@ -12,7 +12,7 @@ int main() {
         ptr[i] = malloc(10 * 1024 * 1024);
         if (ptr[i] != NULL)
             memset(ptr[i], 0, 10 * 1024 * 1024);
-
+        printf("%ld\n", res.ru_maxrss);
         getrusage(RUSAGE_SELF, &res);
         sleep(1);
     }      
