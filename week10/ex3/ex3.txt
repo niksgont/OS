@@ -1,5 +1,34 @@
-   rwx rwx rwx
-    u	g   o
+chmod +x _ex3.txt
+total 8
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1_1.txt
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1_2.txt
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1.txt
+-rw-r--r-- 1 anel anel  55 Oct 21 12:58 ex1.txt
+-rw-r--r-- 1 anel anel 495 Oct 21 13:17 ex2.txt
+-rw-r--r-- 1 anel anel   0 Oct 21 13:22 _ex3.txt
+-rw-r--r-- 1 anel anel   0 Oct 21 13:22 ex3.txt
+
+chmod uo=+rwx _ex3.txt
+total 12
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1_1.txt
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1_2.txt
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1.txt
+-rw-r--r-- 1 anel anel  55 Oct 21 12:58 ex1.txt
+-rw-r--r-- 1 anel anel 495 Oct 21 13:17 ex2.txt
+-rwxr--rwx 1 anel anel   0 Oct 21 13:22 _ex3.txt
+-rw-r--r-- 1 anel anel 380 Oct 21 13:23 ex3.txt
+
+
+chmod -R g=u _ex3.txt
+total 12
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1_1.txt
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1_2.txt
+-rw-r--r-- 3 anel anel   0 Oct 21 12:55 _ex1.txt
+-rw-r--r-- 1 anel anel  55 Oct 21 12:58 ex1.txt
+-rw-r--r-- 1 anel anel 495 Oct 21 13:17 ex2.txt
+-rwxrwxrwx 1 anel anel   0 Oct 21 13:22 _ex3.txt
+-rw-r--r-- 1 anel anel 761 Oct 21 13:24 ex3.txt
+
 1) 110 110 000 == 660 -> user(owner) & group can read & write, others cannot do anything
 2) 111 111 101 == 775 -> user(owner) & group can read & write & execute, others can read & execute
 3) 111 111 111 == 777 -> all can do all
