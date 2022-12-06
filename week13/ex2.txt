@@ -1,0 +1,6 @@
+recovery
+This method allows the processes to become stuck and then checks for deadlock in the system on a regular basis. If it does, the system then employs several recovery techniques to break the impasse.
+prevention
+Only when Mutual Exclusion, hold and wait, No Preemption, and circular wait all hold at the same time does deadlock occur. The system will never reach a stalemate if any one of the four conditions can be broken at any time.
+avoidance
+At each step the operating system takes in deadlock avoidance, it determines whether the system is in a safe state or an unsafe state. Up until the system is in a safe state, the procedure keeps going. The OS must take a step back whenever the system enters an unsafe condition.
